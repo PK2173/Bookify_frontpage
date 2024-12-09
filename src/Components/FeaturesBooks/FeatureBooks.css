@@ -1,0 +1,137 @@
+/* .dismiss-button {
+    margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f44336; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dismiss-button:hover {
+  background-color: #d32f2f;
+}
+
+
+  .featurebook-box{
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  .featuredBooks-slider-containerslider-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .fbslider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .featurebook-box img{
+    box-sizing: content-box;
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  .fbswiper-pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #333;
+  } */
+
+  
+
+  
+.features-book-contnainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fbslider-wrapper{
+  display: flex;
+}
+
+.featurebook-box{
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.featurebook{
+  background: var(--color-light);
+}
+
+.featurebooks-info > div{
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.features-book-contnainer.swiper-pagination{
+  margin: auto;
+  margin-top: 60px;
+}
+
+.feature-border{
+  margin-top: 56px;
+  height: 1px;
+  background: var(--color-dark-Ex);
+  width: 100%;
+}
+
+.feature-btn{
+  margin: auto;
+  margin-right: 0;
+  margin-top: -40px;
+}
+
+
+@media (max-width: 1024px) {
+  .fbslider-wrapper{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1240px) {
+  .fbslider-wrapper {
+    gap: 30px; /* Space between slides */
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .fbslider-wrapper {
+    gap: 20px; /* Space between slides */
+  }
+}
+
+@media (max-width: 480px) {
+  .fbslider-wrapper {
+    gap: 10px; /* Space between slides */
+  }
+}

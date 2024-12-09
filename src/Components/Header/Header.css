@@ -1,0 +1,247 @@
+/* Container for the whole carousel */
+header{
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-container {
+  max-width: 1880px !important;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1; /* Push it behind other content if necessary */
+}
+
+.header-wrapper{
+  display: grid;
+  grid-template-columns: auto 395px;
+  align-items: center;
+  gap: 160px;
+  margin: 0 auto;
+  height: 100% !important;
+  width: 90% !important;
+}
+
+
+.header-left p {
+  margin-bottom: 20px;
+  margin-bottom: 75px;
+}
+
+.slider-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* .slider-button {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+} */
+
+.slidebutton{
+  display: inline-block;
+  font-size: 18px;
+  color: var(--color-dark);
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  border: 1px solid var(--color-dark-Ex);
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.slidebutton:hover{
+  background: var(--color-dark-Ex);
+}
+/* .slidebutton {
+  pointer-events: all;
+  display: inline;
+  display: flex;
+  padding: 20px;
+  font-size:  18px;
+  border: 1px solid var(--color-dark-Ex);
+  border-radius: 50%;
+  color: var(--color-dark);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+} */
+
+
+.swiper-pagination{
+  left: 0;
+  width: fit-content !important;
+  position: relative !important;
+  align-items: center !important;
+  display: flex !important;
+  gap: 20px !important;
+  margin-top: 100px;
+}
+
+.headcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* .pagination {
+  text-align: center;
+  margin-top: 20px;
+} */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.header-left h1 {
+  font-size: 2.5rem;
+}
+
+.header-left p {
+  font-size: 1.2rem;
+}
+
+.header-right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+
+.header-shape img {
+  width: 100%;
+  display: block;
+}
+
+/* .................Max-width:1256px.............. */
+@media (max-width: 1256px) {
+  .header-wrapper{
+    gap: 60px;
+  }
+}
+
+/* .................Max-width:1190px.............. */
+@media (max-width: 1190px) {
+  .header-wrapper{
+    gap: 0;
+  }
+}
+
+/* .................Max-width:1080px.............. */
+@media (max-width: 1080px) {
+  .header-wrapper{
+    grid-template-columns: auto 340px;
+  }
+}
+
+/* .................Max-width:1000px.............. */
+@media (max-width: 1000px) {
+  .header-container{
+    width: 97% !important;
+    padding: 100px 0;
+  }
+  .header-wrapper{
+    width: 92% !important;
+    grid-template-columns: 1fr;
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+  .header-right{
+    grid-row: 1;
+    margin: 0 auto;
+    width: 64%;
+  }
+  .header-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-left p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .header-left .btn{
+    margin: auto;
+  }
+  .swiper-pagination{
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 5px;
+  }
+  .slidebutton{
+    padding: 16px;
+  }
+
+}
+
+/* .................Max-width:600px.............. */
+@media (max-width: 600px) {
+  .header-right{
+    width: 90%;
+  }
+  .slidebutton{
+    padding: 14px;
+  }
+  .slider-button{
+    top: -26%;
+  }
+}
